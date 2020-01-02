@@ -24,4 +24,10 @@ def get_word(w):
 
 word = input("Enter word: ")
 
-print(get_word(word))
+output=get_word(word)
+
+if type(output) ==list:
+  for item in output:
+    print(item)
+else:
+  print(output)
